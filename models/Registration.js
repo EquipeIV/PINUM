@@ -1,5 +1,6 @@
 import { Sequelize } from 'sequelize';
 import conn from '../config/db.js';
+import User from './User.js';
 
 const Registration = conn.define('registration', {
     idRegistration: {
@@ -10,42 +11,44 @@ const Registration = conn.define('registration', {
     },
 
     date: {
-        type: Sequelize.DATE,
+        type: Sequelize.DATEONLY,
         allowNull: false
     },
 
     phone1: {
-        type: Sequelize.String,
+        type: Sequelize.STRING(15),
         allowNull: false
     },
 
     phone2: {
-        type: Sequelize.STRING,
+        type: Sequelize.STRING(15),
         allowNull: true
     },
 
     pin: {
-        type: Sequelize.STRING,
+        type: Sequelize.STRING(50),
         allowNull: true
     },
     
     city: {
-        type: Sequelize.STRING,
+        type: Sequelize.STRING(50),
         allowNull: true
     },
 
     district: {
-        type: Sequelize.STRING,
+        type: Sequelize.STRING(50),
         allowNull: true
     },
-    /*
+    
     idUser: {
         type: Sequelize.INTEGER,
-        autoIncrement: true,
         allowNull: false,
-        foreignKey: true
+        references: {
+            model: 'users',
+            key: 'idUser'
+        }
     }
-    */
+    
 }
 );
 

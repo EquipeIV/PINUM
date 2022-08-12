@@ -10,27 +10,27 @@ const User = conn.define('user', {
     },
 
     name: {
-        type: Sequelize.STRING,
+        type: Sequelize.STRING(80),
         allowNull: false
     },
 
     birthdate: {
-        type: Sequelize.DATE,
+        type: Sequelize.DATEONLY,
         allowNull: false
     },
 
     cpf: {
-        type: Sequelize.STRING,
+        type: Sequelize.STRING(15),
         allowNull: false
     },
 
     email: {
-        type: Sequelize.STRING,
+        type: Sequelize.STRING(50),
         allowNull: false
     },
     
     password: {
-        type: Sequelize.STRING,
+        type: Sequelize.STRING(30),
         allowNull: false
     },
 
