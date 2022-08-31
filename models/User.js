@@ -32,7 +32,7 @@ const User = conn.define('user',
         },
 
         password: {
-            type: Sequelize.STRING(30),
+            type: Sequelize.STRING(120),
             allowNull: false
         },
 

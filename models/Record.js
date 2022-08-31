@@ -2,8 +2,8 @@ import { Sequelize } from 'sequelize';
 import conn from '../config/db.js';
 import User from './User.js';
 
-const Registration = conn.define('registration', {
-    idRegistration: {
+const Record = conn.define('record', {
+    idRecord: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
         allowNull: false,
@@ -52,4 +52,4 @@ const Registration = conn.define('registration', {
 }
 );
 
-export default Registration;
+export default Record;
