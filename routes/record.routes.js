@@ -1,10 +1,12 @@
 import express from "express";
 import Record from "../models/Record.js";
+import verifyToken from '../config/auth.js';
 
 const record = express.Router();
 
 record.get("/", (req, res) => {
-    res.send('Rota de registros')
+    const token = req.headers['token'];
+    const authData = verifyToken(token, res);
 });
 
 record.post("/newRecord", async (req, res) => {

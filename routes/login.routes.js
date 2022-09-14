@@ -35,7 +35,7 @@ login.post('/', async (req, res) => {
     
     const token = Jwt.sign(
         { 
-            id: registeredUser.id, 
+            id: registeredUser.idUser, 
             email: registeredUser.email 
         },
         process.env.JWT_SECRET,
@@ -44,7 +44,7 @@ login.post('/', async (req, res) => {
 
     // 3.3 - Enviar Token ao Usuário
 
-    res.json({ message: "Bem-vindo!", token: token });
+    res.json({ message: "Bem-vindo!", id: registeredUser.idUser, token: token });
 });
 
 export default login;
