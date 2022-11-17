@@ -1,0 +1,20 @@
+ .inputGenerico { 
+text-align:center; 
+padding:5px; 
+border-width:3px; 
+border-radius:12px; 
+border-style:groove; 
+background-color:#ffde66; 
+border-color:#ffcc12; 
+color:#5c2e9c; 
+font-size:23px; 
+box-shadow: 2px 5px 10px 0px rgba(54,27,93,.75); 
+text-shadow:0px 0px 0px rgba(42,42,42,.0); 
+font-weight:bold; 
+font-style:none; 
+font-family:serif;  
+}
+
+.inputGenerico:focus { 
+outline:none; 
+} 

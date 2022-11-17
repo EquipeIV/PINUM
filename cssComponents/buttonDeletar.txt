@@ -1,0 +1,38 @@
+.buttonDeletar {
+   background: #FF1919;
+   background-image: -webkit-linear-gradient(top, #FF1919, #A00F0F);
+   background-image: -moz-linear-gradient(top, #FF1919, #A00F0F);
+   background-image: -ms-linear-gradient(top, #FF1919, #A00F0F);
+   background-image: -o-linear-gradient(top, #FF1919, #A00F0F);
+   background-image: -webkit-gradient(to bottom, #FF1919, #A00F0F);
+   -webkit-border-radius: 41px;
+   -moz-border-radius: 41px;
+   border-radius: 41px;
+   color: #6734AE;
+   font-family: Verdana;
+   font-size: 45px;
+   font-weight: 500;
+   padding: 39px;
+   -webkit-box-shadow: 1px 1px 8px 0 #000000;
+   -moz-box-shadow: 1px 1px 8px 0 #000000;
+   box-shadow: 1px 1px 8px 0 #000000;
+   text-shadow: -2px -1px 3px #000000;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.buttonDeletar:hover {
+   border: solid #A92626 0;
+   background: #A92626;
+   background-image: -webkit-linear-gradient(top, #A92626, #A92619);
+   background-image: -moz-linear-gradient(top, #A92626, #A92619);
+   background-image: -ms-linear-gradient(top, #A92626, #A92619);
+   background-image: -o-linear-gradient(top, #A92626, #A92619);
+   background-image: -webkit-gradient(to bottom, #A92626, #A92619);
+   -webkit-border-radius: 40px;
+   -moz-border-radius: 40px;
+   border-radius: 40px;
+   text-decoration: none;
+}

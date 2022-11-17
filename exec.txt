@@ -1,0 +1,5 @@
+[SUBIR SERVER]
+npm run dev
+
+[EXECUTAR APLICAÇÃO - FRONT]
+npm run web
